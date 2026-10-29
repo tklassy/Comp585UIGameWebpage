@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP 585 UI Game | Roadmap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="site-container">
+      <header>
+        <div class="content-wrap">
+          <h1>UI Game Development Roadmap</h1>
+          <h2>COMP 585 — Fall 2026</h2>
+          <p>
+            Shared development tracker for planned features and completed
+            project systems.
+          </p>
+        </div>
+      </header>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="project.html">Project Overview</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="changelog.html">Changelog</a>
+      </nav>
+
+      <main class="page-content">
+        <details class="roadmap-entry priority-entry" open>
+          <summary>
+            To Do
+            <span class="date-description">
+              Planned, unfinished, and future development work
+            </span>
+          </summary>
+          <div class="roadmap-content">
+            <div class="roadmap-item priority">
+              <h3>Custom Icons</h3>
+              <p>Create custom icons for inventory items, menus, HUD elements, and other interface actions.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Custom Borders</h3>
+              <p>Create consistent custom borders and panel styling for major UI elements.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Reload UI</h3>
+              <p>Expand reload feedback beyond the current ammo counter with clearer visual information during reload actions.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Hunger / Thirst</h3>
+              <p>Add survival status systems and corresponding HUD elements for hunger and thirst.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Main Menu</h3>
+              <p>Create a main menu / pause interface with Resume, Settings, Controls, and Exit Game options.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Basic Enemies</h3>
+              <p>Expand the current target/enemy prototype with basic enemy behavior, spawning, and combat interaction.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Mini Map / Full Map</h3>
+              <p>Add minimap and full-map interfaces for the open-world environment.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Crafting Menu</h3>
+              <p>Create a crafting interface for viewing recipes, requirements, and craftable items.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Character Sheet</h3>
+              <p>Add a character information screen for player stats, equipment, skills, or related RPG information.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Dialogue UI</h3>
+              <p>Add an interface for NPC conversations and dialogue choices.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Refine Character and Enemies</h3>
+              <p>Improve the player character, enemy models, behaviors, feedback, and related interface presentation.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Computer Puzzles</h3>
+              <p>Add terminal or computer-based puzzle interactions that use dedicated UI screens.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Date / Time UI</h3>
+              <p>Explore a real-time date display and date-picker style interface where useful.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Color Picker</h3>
+              <p>Allow players to customize interface colors such as menu accents or the crosshair.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Settings Sliders</h3>
+              <p>Add slider controls for options such as difficulty, camera sensitivity, field of view, and graphics settings.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Custom Cursor</h3>
+              <p>Add a game-specific cursor and explore contextual cursor states for different interactions.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Expanded Interaction Prompts</h3>
+              <p>Improve contextual world-space prompts so interaction text changes based on the nearby object and available action.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Inventory Stack Interaction</h3>
+              <p>Expand inventory manipulation with tested stack combining and splitting behavior.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Responsive UI Scaling</h3>
+              <p>Continue improving anchors and scaling so UI elements remain readable at different resolutions and aspect ratios.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>UI Animation and Feedback</h3>
+              <p>Add transitions, highlights, and other feedback to make interactions easier to read.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Web / Firebase Exploration</h3>
+              <p>Investigate Firebase and a possible web-based version or online data feature after the core game systems are stable.</p>
+            </div>
+
+            <div class="roadmap-item priority">
+              <h3>Final Integration / Polish</h3>
+              <p>Connect remaining systems, polish the UI, fix bugs, test gameplay, prepare the final build, and complete the final demonstration.</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="roadmap-entry completed-entry">
+          <summary>
+            Completed
+            <span class="date-description">
+              Systems currently implemented and working
+            </span>
+          </summary>
+          <div class="roadmap-content">
+            <div class="roadmap-item completed">
+              <h3>GitHub Project Setup</h3>
+              <p>Created GitHub repositories for project development and the public development website.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Game World v1</h3>
+              <p>Created the initial playable 3D game world used for UI and interaction testing.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Basic Character and Controls v1</h3>
+              <p>Implemented the controllable player and mouse/keyboard movement foundation.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Rifle, Ammo, and Reloading</h3>
+              <p>Implemented weapon firing, ammunition tracking, and reloading behavior.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Inventory Menu</h3>
+              <p>Implemented the main grid-based inventory and item movement between inventory slots.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Inventory Hotbar</h3>
+              <p>Implemented an eight-slot hotbar that exposes quick-access inventory slots on the HUD.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Item Tooltip Hover</h3>
+              <p>Implemented hover information for inventory items, including item details and quantity.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Player Health Bar</h3>
+              <p>Implemented HUD tracking and display of the player's current health.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Enemy Health Bar v1</h3>
+              <p>Implemented a world-space enemy health bar positioned above the target.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Ammo Counter v1</h3>
+              <p>Implemented an on-screen ammunition counter connected to the weapon system.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Player Stamina</h3>
+              <p>Implemented HUD tracking and display of the player's current stamina.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>No-Ammo Alert</h3>
+              <p>Implemented a warning when the player attempts to fire without usable ammunition.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Radial Menu</h3>
+              <p>Implemented a circular menu for multiple interface choices.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Menu Hint</h3>
+              <p>Implemented an on-screen hint showing how to access the radial menu.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Floating Interaction Text</h3>
+              <p>Implemented world-space interaction text near interactable objects.</p>
+            </div>
+
+            <div class="roadmap-item completed">
+              <h3>Configurable Inventory Keybind</h3>
+              <p>Made the inventory toggle key configurable through the Unity Inspector.</p>
+            </div>
+          </div>
+        </details>
+      </main>
+
+      <footer>
+        <div class="content-wrap">
+          <p>COMP 585 UI Game Development Project</p>
+          <p>Fall 2026</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

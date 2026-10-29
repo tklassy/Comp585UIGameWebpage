@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP 585 UI Game | Project Overview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="site-container">
+      <header>
+        <div class="content-wrap">
+          <h1>Project Overview</h1>
+          <p>
+            The original proposal, current direction, major UI systems, and
+            technology used for the COMP 585 UI Game.
+          </p>
+        </div>
+      </header>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="project.html">Project Overview</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="changelog.html">Changelog</a>
+      </nav>
+
+      <main>
+        <section class="project-section">
+          <div class="content-wrap">
+            <h2>Original Proposal</h2>
+            <p>
+              The project was proposed on September 2, 2026 as
+              <strong>RPG + Adventure Game (Name Pending)</strong>. The central
+              goal was to build a small open-world game that demonstrates course
+              knowledge through practical UI and GUI implementation while still
+              producing an enjoyable game.
+            </p>
+            <p>
+              The intended audience is RPG and adventure-game players. Major
+              inspirations include large open-world RPGs such as Fallout,
+              Skyrim, and Oblivion.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section alternate">
+          <div class="content-wrap">
+            <h2>UI / UX Goals</h2>
+            <p>
+              The project investigates how game interfaces can be created,
+              implemented, and improved so they remain useful and intuitive for
+              players ranging from beginners to experienced users.
+            </p>
+            <p>
+              Early planned interfaces included a character sheet, dialogue UI,
+              open-world map, game launcher, and other interaction-focused
+              screens. The project also explores HUD elements, contextual
+              prompts, inventory interaction, menus, and visual feedback.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="content-wrap">
+            <h2>Current Implementation</h2>
+            <p>
+              The current build is an FPS / survival-style Unity prototype. The
+              player can move through a 3D environment, use a rifle, interact
+              with world items, manage an inventory, and receive feedback
+              through screen-space and world-space UI.
+            </p>
+            <p>
+              The original proposal listed Godot and C++ as the planned engine
+              and programming language. During development, the implementation
+              moved to <strong>Unity and C#</strong>, with Unity UI and
+              TextMeshPro used for interface work.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section alternate">
+          <div class="content-wrap">
+            <h2>Inventory, Hotbar, and Tooltip</h2>
+            <p>
+              The inventory uses a grid layout to organize item slots and allow
+              the player to move items between locations. An eight-slot hotbar
+              exposes commonly used inventory slots directly on the HUD.
+            </p>
+            <p>
+              Hovering over an item displays a temporary tooltip containing item
+              information such as its name, type, description, and quantity.
+              The tooltip uses an overlay pattern because the information is
+              only needed while inspecting an item.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="content-wrap">
+            <h2>Combat and Status HUD</h2>
+            <p>
+              The combat HUD includes an ammo counter with reload tracking and a
+              no-ammo alert when the player attempts to fire without usable
+              ammunition.
+            </p>
+            <p>
+              Player health and stamina are displayed as persistent HUD
+              elements. Enemies use a world-space health bar positioned above
+              the target so health information remains visually associated with
+              the object.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section alternate">
+          <div class="content-wrap">
+            <h2>Menus and Interaction Feedback</h2>
+            <p>
+              A radial menu presents multiple choices around a central point
+              while allowing the game world to remain visible. A separate menu
+              hint provides contextual input guidance on the HUD.
+            </p>
+            <p>
+              Floating interaction text uses world-space UI near interactable
+              objects so players can identify items and understand available
+              actions without opening a separate screen.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="content-wrap">
+            <h2>Additional UI Ideas</h2>
+            <p>
+              Planned and exploratory interface ideas include a real-time date
+              display, date picker, UI and crosshair color selection, difficulty
+              controls, camera-sensitivity and FOV sliders, graphics settings,
+              custom cursors, a minimap/full map, crafting, dialogue, character
+              sheets, and computer/puzzle interfaces.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section alternate">
+          <div class="content-wrap">
+            <h2>Data and Web Direction</h2>
+            <p>
+              The current game is designed around locally stored application and
+              user data. Game assets are distributed with the application.
+            </p>
+            <p>
+              The original proposal also identified Firebase as a possible
+              future service for a web-based version or online data features.
+              That remains a future direction rather than a currently completed
+              system.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="content-wrap">
+            <h2>Layout Patterns</h2>
+            <p>
+              The inventory uses a Grid pattern, while the hotbar uses a compact
+              horizontal grid / stack. Temporary tooltip information and most
+              gameplay status indicators use Overlay patterns. Enemy health and
+              interaction labels use world-space overlays, and the menu wheel
+              uses a radial / circular layout.
+            </p>
+            <p>
+              Future UI screens will continue to incorporate layout and
+              interaction patterns covered in COMP 585 where they improve
+              readability or usability.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section alternate">
+          <div class="content-wrap">
+            <h2>Development Process</h2>
+            <p>
+              Development is organized around roughly two-week milestones.
+              Planned milestones include world creation, player controls,
+              interactable objects, informational UI, major gameplay menus, and
+              final integration and polish.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="content-wrap">
+            <h2>Technology Stack</h2>
+            <p>
+              Current development uses Unity, C#, Unity UI, TextMeshPro, Visual
+              Studio Code, GitHub, and public / Unity Asset Store assets.
+            </p>
+            <p>
+              The proposal originally specified Godot and C++; those technologies
+              describe the initial plan rather than the current implementation.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="content-wrap">
+          <p>COMP 585 UI Game Development Project</p>
+          <p>Fall 2026</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

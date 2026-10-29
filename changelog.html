@@ -1,0 +1,234 @@
+<!doctype html>
+<!-- Last synced Comp585Game commit: 9fc435f3aba74a60b5b0ea8ca2acc97b10991000 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP 585 UI Game | Changelog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .change-entry {
+        background: #f7f5f0;
+        margin-top: 15px;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .change-entry:first-child {
+        margin-top: 0;
+      }
+
+      .date-entry .change-entry > summary {
+        padding: 18px 20px;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 1.05em;
+        font-weight: 600;
+        color: #3f3a35;
+        cursor: pointer;
+        list-style: none;
+      }
+
+      .date-entry .change-entry > summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .date-entry .change-entry > summary::after {
+        content: "+";
+        float: right;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+
+      .date-entry .change-entry[open] > summary::after {
+        content: "−";
+      }
+
+      .date-entry .change-entry > summary:hover {
+        background: rgba(201, 221, 242, 0.3);
+      }
+
+      .change-documentation {
+        padding: 0 20px 20px;
+        line-height: 1.7;
+      }
+
+      .change-documentation p:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-container">
+      <header>
+        <div class="content-wrap">
+          <h1>Development Changelog</h1>
+          <p>
+            A chronological record of project decisions, UI features, fixes, and
+            interface changes made during development of the COMP 585 UI Game.
+            Each change can be expanded to view additional implementation notes.
+          </p>
+        </div>
+      </header>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="project.html">Project Overview</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="changelog.html">Changelog</a>
+      </nav>
+
+      <main class="page-content">
+        <details class="date-entry">
+          <summary>
+            October 23, 2026
+            <span class="date-description">
+              HUD, inventory, and interaction UI expansion
+            </span>
+          </summary>
+          <div class="date-content">
+            <details class="change-entry">
+              <summary>Added Inventory Hotbar</summary>
+              <div class="change-documentation">
+                <p>An eight-slot hotbar was added to expose quick-access inventory slots directly on the gameplay HUD.</p>
+                <p>The selected hotbar slot can be changed with number keys, allowing commonly used items to remain visible without opening the full inventory.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Added Item Tooltip Hover</summary>
+              <div class="change-documentation">
+                <p>Hovering over an inventory item now displays a temporary tooltip containing item information such as the item name, type, description, and quantity.</p>
+                <p>The tooltip behaves as an overlay so the information appears only while the player is inspecting an item.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Added Player Health and Stamina Displays</summary>
+              <div class="change-documentation">
+                <p>Player health and stamina were added as persistent HUD elements so important status information remains visible during gameplay.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Added Menu Hint and No-Ammo Alert</summary>
+              <div class="change-documentation">
+                <p>A menu input hint was added to show the player how to open the radial menu.</p>
+                <p>A no-ammo warning was added to provide immediate feedback when the player attempts to fire without usable ammunition.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Added Floating Interaction Text</summary>
+              <div class="change-documentation">
+                <p>World-space interaction text was added near interactable objects so players can identify items and understand available actions while remaining in the game world.</p>
+                <p>TextMeshPro material presets allow the interaction text to use white lettering with a black outline without changing unrelated UI text.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Made the Inventory Key Configurable</summary>
+              <div class="change-documentation">
+                <p>The inventory toggle was changed from a hard-coded Tab key to an Inspector-configurable KeyCode field.</p>
+                <p>This allows keys such as Tab, I, or B to be selected without editing the InventoryManager script.</p>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <details class="date-entry">
+          <summary>
+            October 8, 2026
+            <span class="date-description">
+              Initial gameplay UI systems
+            </span>
+          </summary>
+          <div class="date-content">
+            <details class="change-entry">
+              <summary>Implemented the Inventory UI</summary>
+              <div class="change-documentation">
+                <p>A grid-based inventory was implemented to display and manage collected items.</p>
+                <p>The inventory supports item slots and drag-and-drop movement between slots.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Implemented the Enemy Health Bar</summary>
+              <div class="change-documentation">
+                <p>A world-space health bar was implemented above the enemy target so health information remains associated with the object in the game world.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Implemented the Ammo Counter and Reloading UI</summary>
+              <div class="change-documentation">
+                <p>The weapon system tracks ammunition and reloading while the HUD displays the current ammo state to the player.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Implemented the Radial Menu</summary>
+              <div class="change-documentation">
+                <p>A circular menu was implemented to organize multiple interface choices around a central point while keeping the game world visible in the background.</p>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <details class="date-entry">
+          <summary>
+            September 2, 2026
+            <span class="date-description">
+              Initial project proposal and UI direction
+            </span>
+          </summary>
+          <div class="date-content">
+            <details class="change-entry">
+              <summary>Established the RPG + Adventure Game Concept</summary>
+              <div class="change-documentation">
+                <p>The initial proposal defined the project as an RPG / adventure game built to demonstrate course knowledge through practical UI and GUI implementation.</p>
+                <p>The planned scope was a one-semester small open-world game intended to combine UI experimentation with enjoyable gameplay.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Defined the Initial UI Goals</summary>
+              <div class="change-documentation">
+                <p>The proposal identified character-sheet UI, dialogue UI, and open-world map interfaces as major target features.</p>
+                <p>The project also established a broader goal of investigating how game UI can be made useful and intuitive for players with different experience levels.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Defined the Original Technology Plan</summary>
+              <div class="change-documentation">
+                <p>The original proposal listed Godot, C++, GitHub, public asset libraries, and Firebase as the intended technology stack.</p>
+                <p>The implementation later moved to Unity and C#. Firebase remains a possible future direction for web or online data features.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Established a Two-Week Development Cycle</summary>
+              <div class="change-documentation">
+                <p>Development milestones were planned around roughly two-week periods covering the game world, player controls, interactable objects, informational UI, and later integration and polish.</p>
+              </div>
+            </details>
+          </div>
+        </details>
+      </main>
+
+      <footer>
+        <div class="content-wrap">
+          <p>COMP 585 UI Game Development Project</p>
+          <p>Fall 2026</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
