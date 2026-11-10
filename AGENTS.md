@@ -10,12 +10,15 @@
 
 ## Start every work cycle
 
-- Review the current development website and repository before proposing implementation or documentation changes. Do not rely solely on previous chats.
+- Review the current development website and game repository before proposing implementation or documentation changes. Do not rely solely on previous chats.
 - Website source: https://github.com/tklassy/Comp585UIGameWebpage
+- Game source: https://github.com/maxisawesome32/COMP585Game
 - Live site: https://tklassy.github.io/Comp585UIGameWebpage/
 - Read applicable repository instructions, `README.md`, `index.html`, `project.html`, `roadmap.html`, `changelog.html`, relevant styles, and recent commits.
-- This workflow uses only the website repository. Do not require an external game or Assets repository, an external repository push, or a source-sync commit marker.
-- Older documentation may reference a private game repository. Treat that as a documentation discrepancy to flag, not as authorization or a requirement to inspect another repository.
+- Review applicable instructions, relevant scripts, project settings, and recent commits in the game repository before proposing game corrections. Use maxisawesome32/COMP585Game as the current game source; older references to tklassy/Comp585Game are outdated.
+- If the game repository is inaccessible, state the access gap and use user-provided files or confirmed local work. Do not claim its contents were reviewed.
+- Keep website and game repository changes separate. Authorization to edit or push the website does not automatically authorize changes to the game repository.
+- Do not require an Assets repository or introduce a source-sync commit marker unless the user requests one.
 - Use the user's stated work-cycle date. Interpret timestamps in America/Los_Angeles.
 - Distinguish website-documented features, user-reported local work, source-reviewed implementation, planned work, and tested behavior.
 - Website documentation alone does not verify the current Unity implementation. If game files or testing evidence are unavailable, state that limitation clearly.
@@ -31,7 +34,7 @@
 
 ## Code corrections
 
-- Read the current full script supplied by the user before preparing a correction. Request missing files when they are necessary to preserve behavior.
+- Read the current full script from the game repository or supplied by the user before preparing a correction. Request missing files when they are necessary to preserve behavior.
 - Provide complete code-file replacements for Unity C# corrections, including small fixes and large files.
 - Identify the exact destination path when known. Do not invent a Unity project path.
 - Provide complete compilable contents without omitted sections or placeholder comments.
@@ -70,7 +73,7 @@
 - Keep website files read-only during a work cycle. Maintain proposed entries and other drafts separately.
 - Update website files at the end of a work cycle only with explicit user permission covering those edits.
 - Prepare concrete proposed content and identify affected files before requesting permission so the user can review the result in chat.
-- Base end-of-cycle updates on the current website, user-provided scripts, screenshots, test results, and confirmed work. Do not wait for an external repository push.
+- Base end-of-cycle updates on the current website, reviewed game repository changes, user-provided scripts, screenshots, test results, and confirmed work. Re-read newly pushed game commits before documenting them; distinguish pushed changes from local work and do not require a push unless the user makes it part of the cycle.
 - Editing permission does not automatically authorize a push. Push, merge, deploy, or publish only when explicitly authorized. A single instruction may authorize both editing and pushing.
 - Do not interpret a request to inspect, draft, reformat, or summarize as permission to modify or publish.
 - Preserve the static HTML/CSS structure, shared navigation, existing visual style, and homepage development notices unless a requested change requires otherwise.
