@@ -4,4 +4,4 @@ Public development website for the COMP 585 UI-focused RPG / adventure game proj
 
 - Repository: https://github.com/tklassy/Comp585UIGameWebpage
 - Live site: https://tklassy.github.io/Comp585UIGameWebpage
-- Game source: private repository `tklassy/Comp585Game`
+- Game source: https://github.com/maxisawesome32/COMP585Game
