@@ -25,7 +25,8 @@
       }
 
       .date-entry .change-entry > summary {
-        padding: 18px 20px;
+        position: relative;
+        padding: 18px 52px 18px 20px;
         font-family: "IBM Plex Sans", sans-serif;
         font-size: 1.05em;
         font-weight: 600;
@@ -40,7 +41,11 @@
 
       .date-entry .change-entry > summary::after {
         content: "+";
-        float: right;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        line-height: 1;
         font-family: "IBM Plex Sans", sans-serif;
         font-size: 1.1em;
         font-weight: 600;
@@ -74,6 +79,7 @@
             interface changes made during development of the COMP 585 UI Game.
             Each change can be expanded to view additional implementation notes.
           </p>
+          <p class="as-of-date"><strong>As of:</strong> November 9, 2026</p>
         </div>
       </header>
 
@@ -87,9 +93,54 @@
       <main class="page-content">
         <details class="date-entry">
           <summary>
+            November 9, 2026
+            <span class="date-description">
+              Tim - Tablet Interface Styling, HUD Scaling, and Scene Cleanup
+            </span>
+          </summary>
+          <div class="date-content">
+            <details class="change-entry">
+              <summary>Updated UI Panels to a Ruggedized Military Tablet Style</summary>
+              <div class="change-documentation">
+                <p>Updated the hotbar, inventory, crafting panel, tooltip panel, notes panel, and ammo counter panel to use a consistent ruggedized military tablet appearance. These interfaces now share a visual direction across the gameplay HUD and screen overlays.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Added Tablet Screen-Edge Effects</summary>
+              <div class="change-documentation">
+                <p>Added screen-edge effects to reinforce the militarized tablet appearance and visually frame the gameplay interface.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Fixed GameHUD Screen Scaling</summary>
+              <div class="change-documentation">
+                <p>Updated GameHUD to scale with the screen using a 1920 × 1080 reference resolution.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Removed Unused Scenes From the Development Branch</summary>
+              <div class="change-documentation">
+                <p>Removed other contributors’ scenes from Tim’s development branch, leaving only the scene used for this branch’s work. This cleanup was intended to reduce the risk of scene conflicts during later development and integration.</p>
+              </div>
+            </details>
+
+            <details class="change-entry">
+              <summary>Added the v0.5 Main Menu Layout</summary>
+              <div class="change-documentation">
+                <p>Added an initial v0.5 main menu layout. This version establishes the visual interface; menu functionality has not been implemented and is planned for the next work cycle.</p>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <details class="date-entry">
+          <summary>
             October 23, 2026
             <span class="date-description">
-              HUD, inventory, and interaction UI expansion
+              Tim - HUD, inventory, and interaction UI expansion
             </span>
           </summary>
           <div class="date-content">
@@ -146,7 +197,7 @@
           <summary>
             October 8, 2026
             <span class="date-description">
-              Initial gameplay UI systems
+              Tim - Initial gameplay UI systems
             </span>
           </summary>
           <div class="date-content">
@@ -185,7 +236,7 @@
           <summary>
             September 2, 2026
             <span class="date-description">
-              Initial project proposal and UI direction
+              Tim - Initial project proposal and UI direction
             </span>
           </summary>
           <div class="date-content">
