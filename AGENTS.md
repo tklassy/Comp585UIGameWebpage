@@ -87,3 +87,12 @@
 - Treat synced ChatGPT project files under `sources/` as read-only reference material. Do not edit, rename, move, or delete them.
 - Keep generated drafts separate from synced references.
 - Preserve unrelated user changes.
+
+## Contributor Attribution and Current UI Status
+
+- Each changelog date description uses `Contributor - Theme`. All existing entries through November 9, 2026 describe Tim’s work; credit future contributors by name and split or identify contributions clearly when a date includes multiple people.
+- Show a visible `As of: Month D, YYYY` line in the header of all four website pages using the `as-of-date` class. Update the date whenever that page changes while preserving historical changelog dates.
+- November 9 work introduced military tablet styling for the hotbar, inventory, crafting, tooltip, notes, and ammo panels, tablet screen-edge effects, and GameHUD scaling with a 1920 × 1080 reference resolution.
+- The v0.5 main menu is a visual layout only. Functionality is planned for the next work cycle. Do not describe crafting or notes functionality as complete based on panel styling alone.
+- Scene cleanup applies to Tim’s development branch only; do not describe it as removal from teammates’ branches or the entire shared project.
+- Position expansion indicators relative to their own summary, reserve right-side space, and scope open-state rules to direct-child summaries so opening a date does not change closed nested entries to minus signs.
